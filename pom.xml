@@ -13,12 +13,11 @@
     <artifactId>record-builder-core</artifactId>
     <packaging>jar</packaging>
     <name>Record builder</name>
-    <version>${core.artifact.version}-${core.artifact.release}</version>
+    <version>44-r1</version>
 
     <properties>
         <!-- change release here-->
-        <core.artifact.version>36</core.artifact.version>
-        <core.artifact.release>r7</core.artifact.release>
+        <core.artifact.version>44</core.artifact.version>
 
         <maven.moditect.plugin>1.2.2.Final</maven.moditect.plugin>
     </properties>
