@@ -13,7 +13,7 @@
     <artifactId>record-builder-core</artifactId>
     <packaging>jar</packaging>
     <name>Record builder</name>
-    <version>44-r1-SNAPSHOT</version>
+    <version>44-r1-AR-299_Java23-SNAPSHOT</version>
 
     <properties>
         <!-- change release here-->
