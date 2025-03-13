@@ -18,6 +18,7 @@
     <properties>
         <!-- change release here-->
         <core.artifact.version>44</core.artifact.version>
+        <core.artifact.release>r1</core.artifact.release>
 
         <maven.moditect.plugin>1.2.2.Final</maven.moditect.plugin>
     </properties>
@@ -102,12 +103,12 @@
                         <configuration>
                             <artifacts>
                                 <artifact>
-                                    <file>${project.build.directory}/dependency/record-builder-core-${core.artifact.version}-sources.jar</file>
+                                    <file>${project.build.directory}/dependency/${project.artifactId}-${core.artifact.version}-sources.jar</file>
                                     <type>jar</type>
                                     <classifier>sources</classifier>
                                 </artifact>
                                 <artifact>
-                                    <file>${project.build.directory}/dependency/record-builder-core-${core.artifact.version}-javadoc.jar</file>
+                                    <file>${project.build.directory}/dependency/${project.artifactId}-${core.artifact.version}-javadoc.jar</file>
                                     <type>jar</type>
                                     <classifier>javadoc</classifier>
                                 </artifact>
@@ -163,8 +164,8 @@
                         <configuration>
                             <target>
                                 <echo message="renaming sources file" />
-                                <copy file="${project.build.directory}/dependency/record-builder-core-${core.artifact.version}-sources.jar"
-                                      tofile="${project.build.directory}/record-builder-core-${project.version}-sources.jar" />
+                                <copy file="${project.build.directory}/dependency/${project.artifactId}-${core.artifact.version}-sources.jar"
+                                      tofile="${project.build.directory}/${project.artifactId}-${project.version}-sources.jar" />
                             </target>
                         </configuration>
                     </execution>
@@ -177,8 +178,8 @@
                         <configuration>
                             <target>
                                 <echo message="renaming javadoc file" />
-                                <copy file="${project.build.directory}/dependency/record-builder-core-${core.artifact.version}-javadoc.jar"
-                                      tofile="${project.build.directory}/record-builder-core-${project.version}-javadoc.jar" />
+                                <copy file="${project.build.directory}/dependency/${project.artifactId}-${core.artifact.version}-javadoc.jar"
+                                      tofile="${project.build.directory}/${project.artifactId}-${project.version}-javadoc.jar" />
                             </target>
                         </configuration>
                     </execution>
@@ -187,7 +188,7 @@
                         <configuration>
                             <target>
                                 <echo message="unzipping file" />
-                                <unzip src="${project.build.directory}/moditect/record-builder-core-${core.artifact.version}.jar"
+                                <unzip src="${project.build.directory}/moditect/${project.artifactId}-${core.artifact.version}.jar"
                                        dest="${project.build.directory}/classes/" />
                             </target>
                         </configuration>
