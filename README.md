@@ -1,5 +1,5 @@
 # jpms-record-builder-core
-This repository contains a Java Platform Module System (JPMS) compliant version of the ANTLR4 runtime library. The goal of this project is to provide a modularized version of the ANTLR4 runtime that can be easily integrated into Java projects using JPMS.
+The jpms-record-builder-core repository is dedicated to making the record-builder-core module compliant with the Java Platform Module System (JPMS). This compliance ensures that the record-builder-core library can be seamlessly integrated into modular Java applications, leveraging the benefits of JPMS such as improved encapsulation, security, and maintainability.
 
 ## Features
 
@@ -16,21 +16,21 @@ Add the following dependency to your pom.xml:
 ```xml
 <dependency>
     <groupId>dev.ikm.jpms</groupId>
-	<artifactId>antlr4-runtime</artifactId>
-    <version>${lajpms-record-builder-core-version}</version>
+	<artifactId>record-builder-core</artifactId>
+    <version>${latest-jpms-record-builder-core-version}</version>
 </dependency>
 ```
 
 Add the following dependency to your build.gradle:
 ```groovy
-implementation 'dev.ikm.jpms:antlr4-runtime:${lajpms-record-builder-core-version}'
+implementation 'dev.ikm.jpms:antlr4-runtime:${latest-jpms-record-builder-core-version}'
 ```
 
-In your module descriptor (module-info.java), declare the dependency on the antlr4.runtime module:
+In your module descriptor (module-info.java), declare the dependency on the jpms-record-builder-core module:
 
 ```java
 module your.module.name {
-    requires dev.ikm.jpms.antlr4.runtime;
+    requires dev.ikm.jpms.activej.bytebuf;
 }
 ```
 
