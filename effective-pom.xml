@@ -8,7 +8,7 @@
 <!-- ====================================================================== -->
 <!--                                                                        -->
 <!-- Effective POM for project                                              -->
-<!-- 'dev.ikm.jpms:record-builder-core:jar:44-r1-SNAPSHOT'                  -->
+<!-- 'dev.ikm.jpms:record-builder-core:jar:44-r2-SNAPSHOT'                  -->
 <!--                                                                        -->
 <!-- ====================================================================== -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -21,7 +21,7 @@
   </parent>
   <groupId>dev.ikm.jpms</groupId>
   <artifactId>record-builder-core</artifactId>
-  <version>44-r1-SNAPSHOT</version>
+  <version>44-r2-SNAPSHOT</version>
   <name>Record builder</name>
   <description>The General Parent that helps to define the build processes that should be used across projects, regardless of.
         Package type. This is versioned and if you want to use a different version of the pom, you can simply change
@@ -131,7 +131,7 @@
       </testResource>
     </testResources>
     <directory>c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-record-builder-core\target</directory>
-    <finalName>record-builder-core-44-r1-SNAPSHOT</finalName>
+    <finalName>record-builder-core-44-r2-SNAPSHOT</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -445,7 +445,7 @@
             <configuration>
               <target>
                 <echo message="renaming sources file" />
-                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-record-builder-core\target/dependency/record-builder-core-44-sources.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-record-builder-core\target/record-builder-core-44-r1-SNAPSHOT-sources.jar" />
+                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-record-builder-core\target/dependency/record-builder-core-44-sources.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-record-builder-core\target/record-builder-core-44-r2-SNAPSHOT-sources.jar" />
               </target>
             </configuration>
           </execution>
@@ -458,7 +458,7 @@
             <configuration>
               <target>
                 <echo message="renaming javadoc file" />
-                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-record-builder-core\target/dependency/record-builder-core-44-javadoc.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-record-builder-core\target/record-builder-core-44-r1-SNAPSHOT-javadoc.jar" />
+                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-record-builder-core\target/dependency/record-builder-core-44-javadoc.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-record-builder-core\target/record-builder-core-44-r2-SNAPSHOT-javadoc.jar" />
               </target>
             </configuration>
           </execution>
